@@ -1,0 +1,16 @@
+ch_data/
+superset_home/
+
+Dataset/
+dataset/
+*.csv
+
+venv/
+ENV/
+
+__pycache__/
+*.pyc
+.DS_Store
+
+.idea/
+.vscode/
