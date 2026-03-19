@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=for-the-badge&logo=clickhouse&logoColor=black" alt="ClickHouse"/>
   <img src="https://img.shields.io/badge/Apache_Superset-00A699?style=for-the-badge&logo=apache&logoColor=white" alt="Superset"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL"/>
 </div>
 
 ---
@@ -33,3 +34,10 @@
 ### 2. Аналитический обзор маркетплейса
 ![Marketplace Overview](images/anal1.png)
 ![Marketplace Overview2](images/anal2.png)
+
+
+### Архитектура данных
+1. ETL-процесс: Сырые логи обрабатываются чанками с помощью pandas, очищаются от пустых значений и приводятся типы.
+2. Сплитование: Пользователи разделены на группы А и B (50/50).
+3. Хранилище: Обработанные датафреймы загружаются в колоночную СУБД **ClickHouse**.
+4. Визуализация: ClickHouse подключен к **Apache Superset**, где написаны SQL-запросы для создания витрин и дашбордов.
