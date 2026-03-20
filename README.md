@@ -1,6 +1,6 @@
 # E-Commerce A/B Test & Analytics
 ### О проекте:
-Комплексный аналитический проект основанный на [eCommerce данных](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data) за 2 месяца включающий 285 млн. юзеров.
+Комплексный аналитический проект основанный на [eCommerce данных](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data) за 2 месяца включающий 100 млн. юзеров.
 В рамках проекта была создана локальная аналитическая система DWH + BI и проведен A/B тест для тестирования продуктовой гипотезы.
 ### Стек:
 <div align="left">
